@@ -1,0 +1,203 @@
+/* Base container for both Authors and Books */
+.details-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Error message styling */
+.error-message {
+  color: #dc3545; /* Bootstrap danger color */
+  margin-bottom: 1rem;
+}
+
+/* Card container styles for both Authors and Books */
+.card-container {
+  background: #f8f9fa; /* Light grey background */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex; /* Make the card container a flex container */
+  flex-direction: column; /* Arrange children vertically */
+}
+
+.card-container .card {
+  cursor: pointer; /* Change cursor to indicate clickable */
+  transition: box-shadow 0.3s ease-in-out;
+  flex: 1;
+}
+
+.card-container .card-body {
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  flex-grow: 1; /* Allow the card body to grow and use available space */
+  justify-content: space-between; /* Space out the content */
+}
+
+.card-container .card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly elevate card on hover */
+}
+
+/* Interaction effects for cards */
+.card-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-link {
+  color: #007bff; /* Bootstrap primary color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.card-link:hover {
+  color: #0056b3; /* Darker shade for hover effect */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Common title styles for Authors and Books */
+.card-title {
+  font-size: 1.5rem;
+  color: #343a40; /* Bootstrap's dark color */
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Common text and info styles for Authors and Books */
+.card-text,
+.card-subtitle {
+  font-size: 1rem;
+  color: #6c757d; /* Bootstrap's secondary color */
+  margin-bottom: 0.5rem;
+}
+
+/* Special attribute styles for Authors */
+.author-attribute {
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+/* Biography and additional information styling */
+.bio-section,
+.books-section {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: justify;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Section titles for additional sections like Biography and Books */
+.section-title {
+  color: #495057; /* Bootstrap's secondary dark color */
+  margin-bottom: 1rem;
+}
+
+/* Responsive grid for Books */
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .details-container {
+    padding: 1rem;
+  }
+
+  .books-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.books-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .books-grid-layout {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .books-grid-layout {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}
+
+.footer {
+  background-color: #29292c;
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-quote {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  color: #aaaaaa;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover, .footer-link:focus {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.page-content {
+  padding-top: 100px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-logo {
+  width: 10em;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-block {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.w-100 {
+  margin-bottom: 30px;
+  background-color: #343a40;
+}
+
+.text-align-label {
+  text-align: left;
+  
+}

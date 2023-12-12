@@ -1,0 +1,221 @@
+#root {
+  max-width: 1280px;
+  margin: auto;
+  padding: 2rem;
+  padding-top: 150px;
+  text-align: center;
+  justify-content: center;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Fixed navbar at the top */
+.navbar {
+  margin-top: 20px;
+  position: fixed;
+  
+  top: 0;
+  
+  width: 1280px;
+  
+  background-color: #29292c;
+  z-index: 1030;
+  
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+
+.logo {
+  height: 10px;
+  
+  transition: filter 300ms;
+  
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1em #646cffaa);
+  
+}
+
+
+.navbar-nav .nav-item .nav-link {
+  color: #aaaaaa;
+  
+  transition: color 0.3s;
+  
+}
+
+
+.navbar-nav .nav-item .nav-link.active {
+  color: #ffffff;
+  
+  transition: color 0.3s;
+  
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ffffff;
+  
+}
+
+
+*/ .card {
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  border: none;
+  /* Remove default border */
+  border-radius: 10px;
+  /* Rounded corners */
+  overflow: hidden;
+  /* Ensures content fits within the border-radius */
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+header {
+  min-height: 3em;
+  background-color: #272780;
+  color: #fff;
+  padding: 0.5em;
+}
+
+#page {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 42px;
+  padding-bottom: 2rem;
+}
+
+p,
+.card-text {
+  font-family: 'Arial', sans-serif;
+  color: #666;
+}
+
+.card-img-top {
+  border-radius: 0.25rem;
+  /* Rounded corners */
+  margin-bottom: 1rem;
+  /* Space below the image */
+  max-height: 300px;
+  /* Maximum height */
+  object-fit: cover;
+  /* Ensures the image covers the area without stretching */
+}
+
+@media (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card-title {
+  text-transform: capitalize;
+  font-size: 32px;
+  padding-bottom: 20px; /* Capitalize the first letter of each word */
+}
+
+@media (max-width: 480px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.reviews-heading {
+  margin-top: 2rem; /* Adds space above the reviews heading */
+  margin-bottom: 2rem; /* Adds space below the reviews heading, if needed */
+}
+
+.author-details-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.author-card {
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.author-name {
+  font-size: 1.5rem;
+  color: #343a40; /* Bootstrap's default dark */
+  margin-bottom: 0.5rem;
+}
+
+.text-label {
+  font-weight: bold;
+  color: #6c757d; /* Bootstrap's default secondary color */
+}
+
+.author-bio {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 0.5rem;
+}
+
+.books-heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #343a40;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .author-details-container {
+      padding: 0.5rem;
+  }
+}
